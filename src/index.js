@@ -1,3 +1,9 @@
 module.exports = function multiply(first, second) {
-  // your solution
-}
+  let resultMultiplyBigInt = BigInt(first) * BigInt(second);
+
+  let strResult = `${resultMultiplyBigInt}`;
+
+  strResult.slice(0, strResult.length - 2);
+
+  return strResult;
+};
